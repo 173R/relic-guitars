@@ -1,0 +1,37 @@
+.contacts {
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+  &__info {
+    padding: 20px 20px 0 ;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
+    background-color: white;
+    border: solid 3px black;
+
+    .contacts__elem {
+      margin-bottom: 14px;
+      .title {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;
+        text-transform: uppercase;
+      }
+
+      .content {
+        margin-top: 2px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 25px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

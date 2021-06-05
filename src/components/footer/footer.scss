@@ -1,0 +1,103 @@
+.footer {
+  color: #C7C7C7;
+  &-major {
+    height: 200px;
+    background-color: #1C1C1C;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    padding: 0 40px;
+
+    &__left {
+      font-family: 'Raleway', sans-serif;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 26px;
+      text-transform: uppercase;
+      text-shadow:
+              -0 -2px 2px #414141,
+              0 -2px 2px #414141,
+              -0 2px 2px #414141,
+              0 2px 2px #414141,
+              -2px -0 2px #414141,
+              2px -0 2px #414141,
+              -2px 0 2px #414141,
+              2px 0 2px #414141,
+              -1px -2px 2px #414141,
+              1px -2px 2px #414141,
+              -1px 2px 2px #414141,
+              1px 2px 2px #414141,
+              -2px -1px 2px #414141,
+              2px -1px 2px #414141,
+              -2px 1px 2px #414141,
+              2px 1px 2px #414141,
+              -2px -2px 2px #414141,
+              2px -2px 2px #414141,
+              -2px 2px 2px #414141,
+              2px 2px 2px #414141,
+              -2px -2px 2px #414141,
+              2px -2px 2px #414141,
+              -2px 2px 2px #414141,
+              2px 2px 2px #414141;
+    }
+    &__center {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 20px;
+      text-transform: uppercase;
+      margin: 0 auto;
+
+      .links {
+        &__item {
+          margin: 0 10px;
+          display: inline-block;
+          a {
+            color: #C7C7C7;
+          }
+        }
+      }
+      .contacts {
+        margin-top: 30px;
+        &__item {
+          display: inline-block;
+          margin: 0 10px;
+
+          .title {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 400;
+          }
+
+          .content {
+            font-weight: 700;
+          }
+        }
+
+      }
+    }
+    &__right {
+      margin-left: auto;
+      .icons {
+        &__item {
+          display: inline-block;
+          margin: 0 5px;
+        }
+     }
+    }
+  }
+
+  &-minor {
+    padding: 15px;
+    background-color: #121212;
+    height: 50px;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    align-items: center;
+    text-transform: capitalize;
+  }
+}

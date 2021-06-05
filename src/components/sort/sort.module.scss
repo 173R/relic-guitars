@@ -1,0 +1,41 @@
+@import "../../variables";
+
+.wrapper {
+  @include font('Raleway', 500, 20px);
+  position: relative;
+  margin-left: auto;
+  padding-left: 20px;
+  color: $color_grey;
+  margin-right: 40px;
+  .label {
+
+  }
+
+  .selected {
+    margin-left: 10px;
+    color: $color_orange;
+    transition-duration: 0.3s;
+    &:hover {
+      text-shadow: red 0 0 1px;
+    }
+  }
+}
+
+.dropdownMenu {
+  position: absolute;
+  right: -5px;
+  z-index: 1;
+  padding: 0 10px;
+  margin-left: auto;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+  border-radius: 10px;
+
+  .dropdownItem {
+    font-size: 17px;
+    transition-duration: 0.3s;
+    &:hover {
+      color: $color_orange;
+    }
+  }
+}

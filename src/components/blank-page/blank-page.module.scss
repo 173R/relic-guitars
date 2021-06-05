@@ -1,0 +1,16 @@
+@import "../../variables";
+
+.text {
+
+  @include font('Raleway', 500, 30px);
+  height: 800px;
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+
+  img{
+    padding-top: 200px;
+    display: block;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,67 @@
+@import "../../variables";
+
+.filters {
+  @include font('Raleway', 500, 25px);
+  align-self: start;
+  margin-bottom: 60px;
+  padding:0 20px 20px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+  color: black;
+
+  &-item {
+    &__title {
+      display: block;
+      line-height: 40px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      border-bottom: solid 2px black;
+    }
+    &-radio {
+      display: block;
+      cursor:pointer;
+      margin-bottom: 20px;
+      padding-left: 7px;
+
+      &__name {
+        color: $color_light_grey;
+        font-size: 17px;
+        line-height: 20px;
+        display: inline-block;
+        margin-left: 25px;
+        transition: color 0.2s;
+        user-select: none;
+      }
+
+      &__name.active {
+        color: $color_orange;
+      }
+
+      &__input {
+        transform:scale(2);
+      }
+    }
+    &-radio:hover &-radio__name {
+      color: $color_orange;
+    }
+  }
+  &-buttons{
+    &__apply {
+      display: block;
+      margin: 0 auto;
+      height: 30px;
+      width: 80%;
+      border: solid 2px $color_grey;
+    }
+  }
+
+  @media (max-width: 1400px) {
+
+  }
+  @media (max-width: 1024px) {
+
+  }
+
+  @media (max-width: 570px) {
+
+  }
+}

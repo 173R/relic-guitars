@@ -1,0 +1,582 @@
+{
+  "guitars": [
+    {
+      "id": 0,
+      "title": "Fender Custom Shop '60 Reissue Stratocaster Relic",
+      "imgUrl": "https://images.reverb.com/image/upload/s--5Nf4m2rG--/t_card-square/v1578969123/q1lonzegmgbxsgbpxrws.jpg",
+      "price": "391000",
+      "fullImage": "https://images.reverb.com/image/upload/s--r-LKfa5R--/f_auto,t_large/v1603544909/fcsnd5ywgl9auesuldmi.jpg",
+      "description": {
+        "madeIn": "USA",
+        "brand": "Fender",
+        "color": "Red",
+        "decade": "2010"
+      }
+    },
+    {
+      "id": 1,
+      "title": "Fender Custom Shop '57 Reissue Stratocaster Relic",
+      "imgUrl": "https://images.reverb.com/image/upload/s--3aU-ooLo--/t_card-square/v1567027273/xczppsilrtsmto1hzguw.jpg",
+      "price": "276000",
+      "description": {
+        "madeIn": "USA",
+        "brand": "Fender",
+        "color": "Sunburst",
+        "decade": "2000"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Fender Custom Shop '57 Reissue Stratocaster Relic",
+      "imgUrl": "https://images.reverb.com/image/upload/s--jmtxzwzV--/t_card-square/v1567104656/ipvhith4lkqp7ijbwqyx.jpg",
+      "price": "207000",
+      "description": {
+        "madeIn": "USA",
+        "brand": "Fender",
+        "color": "Blue",
+        "decade": "2010"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Fender Custom Shop '51 Reissue Nocaster Relic",
+      "imgUrl": "https://images.reverb.com/image/upload/s--BUPsRZDw--/t_card-square/v1567717758/mgvrcvwa5zm4painqrxi.png",
+      "price": "353000",
+      "description": {
+        "madeIn": "USA",
+        "brand": "Fender",
+        "color": "Yellow",
+        "decade": "2020"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Fender Custom Shop '62/63 Stratocaster Reissue Journeyman Relic",
+      "imgUrl": "https://images.reverb.com/image/upload/s--uc_xqWAD--/t_card-square/v1601669381/qwz7mvkhyn13gkynxzfi.jpg",
+      "price": "292000",
+      "description": {
+        "madeIn": "USA",
+        "brand": "Fender",
+        "color": "Green",
+        "decade": "1990"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Fender Custom Shop '68 Reissue Stratocaster Relic",
+      "imgUrl": "https://images.reverb.com/image/upload/s--_3Us52sp--/t_card-square/v1567199389/oze7pmzagh7gxafuuegs.jpg",
+      "price": "283000",
+      "description": {
+        "madeIn": "USA",
+        "brand": "Fender",
+        "color": "Pink",
+        "decade": "2020"
+      }
+    },
+    {
+      "id": 6,
+      "title": "Fender Custom Shop '60 Reissue Telecaster Custom Relic",
+      "imgUrl": "https://images.reverb.com/image/upload/s--BsOtlzJV--/t_card-square/v1607466059/ytrbhcqfwfrhbu8q9idx.jpg",
+      "price": "330000",
+      "description": {
+        "madeIn": "USA",
+        "brand": "Fender",
+        "color": "White",
+        "decade": "2020"
+      }
+    },
+    {
+      "id": 7,
+      "title": "Fender Custom Shop '64 Reissue Stratocaster Relic",
+      "imgUrl": "https://images.reverb.com/image/upload/s--CMwDL7gL--/t_card-square/v1567109191/qegphoqn5eidr4pgh1oy.jpg",
+      "price": "260000",
+      "description": {
+        "madeIn": "USA",
+        "brand": "Fender",
+        "color": "Gold",
+        "decade": "2010"
+      }
+    },
+    {
+      "id": 8,
+      "title": "Fender Custom Shop '59 Reissue Stratocaster Journeyman Relic",
+      "imgUrl": "https://images.reverb.com/image/upload/s--9p7p27dZ--/t_card-square/v1567105279/snvxtpzyeg7hjkofre2f.jpg",
+      "price": "259000",
+      "description": {
+        "madeIn": "USA",
+        "brand": "Fender",
+        "color": "Pink",
+        "decade": "2000"
+      }
+    },
+    {
+      "id": 9,
+      "title": "Fender Custom Shop Postmodern Stratocaster Journeyman Relic",
+      "imgUrl": "https://images.reverb.com/image/upload/s--7W9Q6HBY--/t_card-square/v1565814689/fqsppcp4pdwbttahhezj.png",
+      "price": "229000",
+      "description": {
+        "madeIn": "USA",
+        "brand": "Fender",
+        "color": "Sunburst",
+        "decade": "1980"
+      }
+    },
+    {
+      "id": 10,
+      "title": "Fender Custom Shop '61 Reissue Stratocaster Relic",
+      "imgUrl": "https://images.reverb.com/image/upload/s--k-H47zMA--/t_card-square/v1567107641/qumljxamguyhdr6r0lhg.jpg",
+      "price": "205000",
+      "description": {
+        "madeIn": "USA",
+        "brand": "Fender",
+        "color": "Blue",
+        "decade": "1990"
+      }
+    },
+    {
+      "id": 11,
+      "title": "Fender Custom Shop '58 Reissue Stratocaster Relic",
+      "imgUrl": "https://images.reverb.com/image/upload/s--N80bzAqI--/t_card-square/v1567105152/f9ypk313jbywkvbuxk8a.jpg",
+      "price": "253000",
+      "description": {
+        "madeIn": "USA",
+        "brand": "Fender",
+        "color": "Red",
+        "decade": "2000"
+      }
+    },
+    {
+      "id": 12,
+      "title": "Fender Custom Shop '57 Reissue Stratocaster Journeyman Relic",
+      "imgUrl": "https://images.reverb.com/image/upload/s--OeCbuT-w--/t_card-square/v1567104311/sskcajrkgyc9cyokizsc.jpg",
+      "price": "225000",
+      "description": {
+        "madeIn": "USA",
+        "brand": "Fender",
+        "color": "Red",
+        "decade": "1990"
+      }
+    },
+    {
+      "id": 13,
+      "title": "Gibson Special Order Custom Shop Les Paul Custom",
+      "imgUrl": "https://images.reverb.com/image/upload/s--5YCJIXRO--/t_card-square/v1571347864/urdlwkudexcie29xeztq.jpg",
+      "price": "492000",
+      "description": {
+        "madeIn": "USA",
+        "brand": "Gibson",
+        "color": "Blue",
+        "decade": "2020"
+      }
+    },
+    {
+      "id": 14,
+      "title": "Gibson Custom Shop Historic Collection '58 Les Paul Standard Flame",
+      "imgUrl": "https://images.reverb.com/image/upload/s--WArg4vq2--/t_card-square/v1572617783/onw0jmbh1ljaipmxn2zr.jpg",
+      "price": "345000",
+      "description": {
+        "madeIn": "USA",
+        "brand": "Gibson",
+        "color": "Sunburst",
+        "decade": "1960"
+      }
+    },
+    {
+      "id": 15,
+      "title": "Gibson Custom Shop '61 Les Paul SG Standard Reissue",
+      "imgUrl": "https://images.reverb.com/image/upload/s--voCDSlR6--/t_card-square/v1571258020/ceui3wy8umuqchgjzmv3.jpg",
+      "price": "226000",
+      "description": {
+        "madeIn": "USA",
+        "brand": "Gibson",
+        "color": "Red",
+        "decade": "1960"
+      }
+    },
+    {
+      "id": 16,
+      "title": "Jackson Custom Shop SL 3S-V Soloist Relic",
+      "imgUrl": "https://images.reverb.com/image/upload/s--esh77CLX--/t_card-square/v1601415392/wqtgxonaymvykznwpyku.jpg",
+      "price": "256000",
+      "description": {
+        "madeIn": "USA",
+        "brand": "Jackson",
+        "color": "Orange",
+        "decade": "2020"
+      }
+    },
+    {
+      "id": 17,
+      "title": "EVH Striped Series Frankie Red / White / Black Stripes Relic 2020",
+      "imgUrl": "https://images.reverb.com/image/upload/s--7Sc8RtCD--/t_card-square/v1579282439/clq6g5kprg9qrfnvxyfz.jpg",
+      "price": "114000",
+      "description": {
+        "madeIn": "Mexico",
+        "brand": "EVH",
+        "color": "Red",
+        "decade": "1990"
+      }
+    },
+    {
+      "id": 18,
+      "title": "ESP LTD TE-254 D3TB Distressed 3-Tone Burst Electric Guitar",
+      "imgUrl": "https://images.reverb.com/image/upload/s--TvqePJxz--/t_card-square/v1621687555/voi0qxhxbt5ipmftybrw.jpg",
+      "price": "136000",
+      "description": {
+        "madeIn": "China",
+        "brand": "ESP",
+        "color": "Sunburst",
+        "decade": "2020"
+      }
+    }
+  ],
+  "bass": [
+    {
+      "id": 19,
+      "title": "Fender Custom Shop '64 Precision Bass Relic",
+      "imgUrl": "https://images.reverb.com/image/upload/s--x7eqCbyT--/t_card-square/v1576792058/slfdudmzimpi8notlki5.jpg",
+      "price": "252000",
+      "description": {
+        "madeIn": "USA",
+        "brand": "Fender",
+        "color": "Sunburst",
+        "decade": "2010"
+      }
+    },
+    {
+      "id": 20,
+      "title": "Fender Custom Shop '57 Precision Bass Journeyman Relic",
+      "imgUrl": "https://images.reverb.com/image/upload/s---q84rszM--/t_card-square/v1576788478/bmnsouqqht0poff5geo0.jpg",
+      "price": "296000",
+      "description": {
+        "madeIn": "USA",
+        "brand": "Fender",
+        "color": "White",
+        "decade": "2020"
+      }
+    },
+    {
+      "id": 21,
+      "title": "Fender Custom Shop '66 Jazz Bass Journeyman Relic",
+      "imgUrl": "https://images.reverb.com/image/upload/s--ERfjTD09--/t_card-square/v1576792187/saebhuy799lh8g1cbik6.jpg",
+      "price": "120000",
+      "description": {
+        "madeIn": "USA",
+        "brand": "Fender",
+        "color": "Blue",
+        "decade": "1990"
+      }
+    },
+    {
+      "id": 22,
+      "title": "Fender Custom Shop '61 Jazz Bass Relic",
+      "imgUrl": "https://images.reverb.com/image/upload/s--taqWL-M0--/t_card-square/v1576790297/ekfks4mztkzt6dp53lf7.jpg",
+      "price": "314000",
+      "description": {
+        "madeIn": "USA",
+        "brand": "Fender",
+        "color": "Sunburst",
+        "decade": "1980"
+      }
+    },
+    {
+      "id": 23,
+      "title": "Fender Custom Shop '51 Precision Bass Relic",
+      "imgUrl": "https://images.reverb.com/image/upload/s--imLNbYBb--/t_card-square/v1576780666/ixremjl1alvokshdx1yr.jpg",
+      "price": "303000",
+      "description": {
+        "madeIn": "USA",
+        "brand": "Fender",
+        "color": "Black",
+        "decade": "2020"
+      }
+    },
+    {
+      "id": 24,
+      "title": "Fender Custom Shop '60 Precision Bass Relic",
+      "imgUrl": "https://images.reverb.com/image/upload/s--w1eSuR4y--/t_card-square/v1576789573/fzov7m8hjzubqha6xexd.jpg",
+      "price": "336000",
+      "description": {
+        "madeIn": "USA",
+        "brand": "Fender",
+        "color": "Black",
+        "decade": "1980"
+      }
+    },
+    {
+      "id": 25,
+      "title": "Squier Classic Vibe '60s Jazz Bass",
+      "imgUrl": "https://images.reverb.com/image/upload/s--nSAuNMdh--/t_card-square/v1622149796/kpvwrbggivzgtusnacni.png",
+      "price": "126000",
+      "description": {
+        "madeIn": "China",
+        "brand": "Squier",
+        "color": "Blue",
+        "decade": "2010"
+      }
+    },
+    {
+      "id": 26,
+      "title": "Epiphone Thunderbird IV Bass",
+      "imgUrl": "https://images.reverb.com/image/upload/s--30HuAPCX--/t_card-square/v1557249216/wunejdds6tcnqwyvf2fp.jpg",
+      "price": "128000",
+      "description": {
+        "madeIn": "China",
+        "brand": "Epiphone",
+        "color": "Sunburst",
+        "decade": "2010"
+      }
+    },
+    {
+      "id": 27,
+      "title": "Gibson Les Paul Junior Tribute DC Bass",
+      "imgUrl": "https://images.reverb.com/image/upload/s--buylAQQ0--/t_card-square/v1556567325/tsjznsqnxid1b1ivquma.jpg",
+      "price": "145000",
+      "description": {
+        "madeIn": "USA",
+        "brand": "Gibson",
+        "color": "Blue",
+        "decade": "2020"
+      }
+    },
+    {
+      "id": 28,
+      "title": "Gibson Les Paul Triumph Bass",
+      "imgUrl": "https://images.reverb.com/image/upload/s--BV6OiO4W--/t_card-square/v1594915336/omjyh6mmt4vwijkbxchs.jpg",
+      "price": "153000",
+      "description": {
+        "madeIn": "USA",
+        "brand": "Gibson",
+        "color": "Natural",
+        "decade": "1970"
+      }
+    },
+    {
+      "id": 29,
+      "title": "Warwick German Pro Series Star Bass 4",
+      "imgUrl": "https://images.reverb.com/image/upload/s--0hwA5F4O--/t_card-square/v1608670986/icvy5f7aeybyeuq1nal4.png",
+      "price": "191000",
+      "description": {
+        "madeIn": "Warwick",
+        "brand": "Germany",
+        "color": "White",
+        "decade": "2020"
+      }
+    },
+    {
+      "id": 30,
+      "title": "Epiphone Artist Series Jack Casady Signature Semi-Hollow Bass",
+      "imgUrl": "https://images.reverb.com/image/upload/s--JNqv3H1N--/t_card-square/v1557248550/ybra2yrkj4cxrdcamjsj.jpg",
+      "price": "109000",
+      "description": {
+        "madeIn": "Epiphone",
+        "brand": "China",
+        "color": "Gold",
+        "decade": "2020"
+      }
+    },
+    {
+      "id": 31,
+      "title": "Epiphone Embassy PRO Bass",
+      "imgUrl": "https://images.reverb.com/image/upload/s--nEZjX4nh--/t_card-square/v1558122769/dnxvupczb2l4rjltwrrv.jpg",
+      "price": "107000",
+      "description": {
+        "madeIn": "Epiphone",
+        "brand": "China",
+        "color": "Red",
+        "decade": "2020"
+      }
+    },
+    {
+      "id": 32,
+      "title": "Squier Classic Vibe '70s Jazz Bass V",
+      "imgUrl": "https://images.reverb.com/image/upload/s--0Ktpb_cH--/t_card-square/v1622150066/e4nchrc6vm72ue0gty6v.png",
+      "price": "120000",
+      "description": {
+        "madeIn": "China",
+        "brand": "Squier",
+        "color": "Natural",
+        "decade": "2010"
+      }
+    },
+    {
+      "id": 33,
+      "title": "Squier Classic Vibe '70s Jazz Bass V",
+      "imgUrl": "https://images.reverb.com/image/upload/s--0Ktpb_cH--/t_card-square/v1622150066/e4nchrc6vm72ue0gty6v.png",
+      "price": "132000",
+      "description": {
+        "madeIn": "China",
+        "brand": "Squier",
+        "color": "Natural",
+        "decade": "2010"
+      }
+    },
+    {
+      "id": 34,
+      "title": "Squier Classic Vibe '70s Jazz Bass V",
+      "imgUrl": "https://images.reverb.com/image/upload/s--0Ktpb_cH--/t_card-square/v1622150066/e4nchrc6vm72ue0gty6v.png",
+      "price": "332000",
+      "description": {
+        "madeIn": "China",
+        "brand": "Squier",
+        "color": "Natural",
+        "decade": "2010"
+      }
+    }
+  ],
+  "amps": [
+    {
+      "id": 35,
+      "title": "Fender Tone Master Twin Reverb 2-Channel 85-Watt 2x12 Digital Guitar Combo",
+      "imgUrl": "https://images.reverb.com/image/upload/s--xoU3WLz3--/t_card-square/v1600379189/kqm9ta1iblz4pejolchg.jpg",
+      "price": "67000",
+      "description": {
+        "madeIn": "USA",
+        "brand": "Fender",
+        "watt": "85",
+        "decade": "2010",
+        "speaker": "2x12"
+      }
+    },
+    {
+      "id": 36,
+      "title": "Fender '64 Custom Hand-Wired Princeton Reverb-Amp 12-Watt 1x10 Guitar Combo",
+      "imgUrl": "https://images.reverb.com/image/upload/s--ya0B8rFq--/t_card-square/v1579720679/v8vkmhqvme2gmvcwf9vb.jpg",
+      "price": "93000",
+      "description": {
+        "madeIn": "USA",
+        "brand": "Fender",
+        "watt": "12",
+        "decade": "2020",
+        "speaker": "1x10"
+      }
+    },
+    {
+      "id":37,
+      "title": "Fender '65 Princeton Reverb Reissue FSR Limited Edition 12-Watt 1x12 Guitar Combo",
+      "imgUrl": "https://images.reverb.com/image/upload/s--WmPjZ-Q---/a_exif,c_thumb,f_auto,fl_progressive,g_south,h_296,q_auto:eco,w_296/v1444335255/pzjcjchbybkgz0mjcoyu.jpg",
+      "price": "69000",
+      "description": {
+        "madeIn": "USA",
+        "brand": "Fender",
+        "watt": "22",
+        "decade": "2020",
+        "speaker": "1x10"
+      }
+    },
+    {
+      "id": 38,
+      "title": "Fender '68 Custom Deluxe Reverb 2-Channel 22-Watt 1x12 Guitar Combo",
+      "imgUrl": "https://images.reverb.com/image/upload/s--PGXmPSv4--/t_card-square/v1558555231/utcqqnrajiazhhuu0hal.jpg",
+      "price": "89000",
+      "description": {
+        "madeIn": "China",
+        "brand": "Fender",
+        "watt": "22",
+        "decade": "2020",
+        "speaker": "1x12"
+      }
+    },
+    {
+      "id": 39,
+      "title": "Mesa Boogie Recto-Verb 25 2-Channel 25-Watt 1x12 Guitar Combo",
+      "imgUrl": "https://images.reverb.com/image/upload/s---mxnm7h4--/a_exif,c_thumb,f_auto,fl_progressive,g_south,h_296,q_auto:eco,w_296/v1449169056/p1jchnrdnwo9ukl14bia.jpg",
+      "price": "92000",
+      "description": {
+        "madeIn": "USA",
+        "brand": "Mesa Boogie",
+        "watt": "25",
+        "decade": "2010",
+        "speaker": "1x12"
+      }
+    },
+    {
+      "id": 40,
+      "title": "Mesa Boogie Mark Five 35 2-Channel 35-Watt 1x12 Guitar Combo",
+      "imgUrl": "https://images.reverb.com/image/upload/s--LAuJ9GVX--/a_exif,c_thumb,f_auto,fl_progressive,g_south,h_296,q_auto:eco,w_296/v1478885179/oz7mpbgwgakmbtrma9qd.jpg",
+      "price": "96000",
+      "description": {
+        "madeIn": "USA",
+        "brand": "Mesa Boogie",
+        "watt": "35",
+        "decade": "2010",
+        "speaker": "1x12"
+      }
+    },
+    {
+      "id": 41,
+      "title": "Marshall CODE25 25w Combo Amp",
+      "imgUrl": "https://images.reverb.com/image/upload/s--YWnVvmPy--/t_card-square/v1608695681/cjltezyqcyynyxeremtl.jpg",
+      "price": "32000",
+      "description": {
+        "madeIn": "China",
+        "brand": "Marshall",
+        "watt": "40",
+        "decade": "2020",
+        "speaker": "1x12"
+      }
+    }
+  ],
+  "pedals": [
+    {
+      "id": 42,
+      "title": "Boss DM-2W Waza Craft Delay Pedal",
+      "imgUrl": "https://images.reverb.com/image/upload/s--yex2_UP_--/f_auto,t_large/v1501879891/cl1kryuoc5my3oykn8et.jpg",
+      "price": "8000",
+      "description": {
+        "madeIn": "China",
+        "brand": "Boss",
+        "effect": "Delay",
+        "decade": "2010"
+      }
+    },
+    {
+      "id": 43,
+      "title": "Boss AD-2 Acoustic Preamp Pedal",
+      "imgUrl": "https://images.reverb.com/image/upload/s--B26YH8mf--/f_auto,t_large/v1501003219/gbmqry7vartkybo4tjcx.jpg",
+      "price": "8800",
+      "description": {
+        "madeIn": "China",
+        "brand": "Boss",
+        "effect": "Preamp",
+        "decade": "2010"
+      }
+    },
+    {
+      "id": 44,
+      "title": "Boss ST-2 Power Stack Distortion Pedal",
+      "imgUrl": "https://images.reverb.com/image/upload/s--3tdUWkAM--/f_auto,t_large/v1606811550/ru094vencqwck2gceuog.jpg",
+      "price": "7600",
+      "description": {
+        "madeIn": "China",
+        "brand": "Boss",
+        "effect": "Distortion",
+        "decade": "2010"
+      }
+    },
+    {
+      "id": 45,
+      "title": "Boss DD-8 Digital Delay Pedal",
+      "imgUrl": "https://images.reverb.com/image/upload/s--XQ8tGOWY--/t_card-square/v1574806911/hbq8p1aaw4shnx5q1ove.jpg",
+      "price": "3000",
+      "description": {
+        "madeIn": "Japan",
+        "brand": "Boss",
+        "effect": "Delay",
+        "decade": "2010"
+      }
+    },
+    {
+      "id": 46,
+      "title": "JHS Morning Glory V4 Overdrive Pedal",
+      "imgUrl": "https://images.reverb.com/image/upload/s--tw0rsvAh--/t_card-square/v1457471160/teasykvzfqhqqf9fh4us.jpg",
+      "price": "7000",
+      "description": {
+        "madeIn": "USA",
+        "brand": "JHS",
+        "effect": "Overdrive",
+        "decade": "2020"
+      }
+    }
+  ]
+}

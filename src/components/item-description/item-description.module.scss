@@ -1,0 +1,67 @@
+@import "../../variables";
+
+.grid {
+  @include font('Montserrat', 700, 25px);
+  //min-height: 800px;
+  display: grid;
+  grid-template-columns: minmax(300px,700px) minmax(300px,700px);
+  margin: 60px 0;
+  justify-items: center;
+  justify-content: center;
+  align-content: start;
+
+  .leftElement {
+    padding:0 40px;
+
+  }
+  .rightElement {
+    padding: 0 40px;
+    .title {
+      border-bottom: solid 1px $color_grey;
+      padding-bottom: 12px;
+    }
+    .description {
+      font-size: 16px;
+      border-bottom: solid 1px $color_grey;
+      padding-bottom: 12px;
+    }
+    .buyButton {
+      position: relative;
+      width: 60%;
+      height: 50px;
+      background-color: $color_orange;
+      font-size: 20px;
+      color: white;
+      border: thick double white;
+      transition-duration: 0.3s;
+      left: 50%;
+      transform: translateX(-50%);
+      &:hover {
+        background-color: $color_dark_orange;
+      }
+    }
+    .price {
+      height: 50px;
+      margin-top: 100px;
+      text-align: center;
+    }
+
+  }
+
+}
+
+.cover{
+  width: 500px;
+}
+
+
+
+
+
+
+
+.buyButton:hover {
+  background-color: darkorange;
+  cursor: pointer;
+}
+

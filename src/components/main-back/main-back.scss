@@ -1,0 +1,82 @@
+
+.main-screen {
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+
+  .border-box {
+    border: solid 2px white;
+    position: absolute;
+    top: 40%; left: 50%;
+    transform: translate(-50%,-50%);
+
+    h1 {
+      display: inline-block;
+      font-family: 'Raleway', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 65px;
+      line-height: 62px;
+      padding:0 6px;
+      text-transform: uppercase;
+      text-align: center;
+      text-shadow:
+              -0 -2px 2px #414141,
+              0 -2px 2px #414141,
+              -0 2px 2px #414141,
+              0 2px 2px #414141,
+              -2px -0 2px #414141,
+              2px -0 2px #414141,
+              -2px 0 2px #414141,
+              2px 0 2px #414141,
+              -1px -2px 2px #414141,
+              1px -2px 2px #414141,
+              -1px 2px 2px #414141,
+              1px 2px 2px #414141,
+              -2px -1px 2px #414141,
+              2px -1px 2px #414141,
+              -2px 1px 2px #414141,
+              2px 1px 2px #414141,
+              -2px -2px 2px #414141,
+              2px -2px 2px #414141,
+              -2px 2px 2px #414141,
+              2px 2px 2px #414141,
+              -2px -2px 2px #414141,
+              2px -2px 2px #414141,
+              -2px 2px 2px #414141,
+              2px 2px 2px #414141;
+      color: #FFFFFF;
+    }
+  }
+
+
+  @media (max-width: 1400px) {
+
+  }
+
+
+  @media (max-width: 1024px) {
+    padding-top:60px;
+
+    .border-box {
+      top: 60%;
+      h1 {
+        font-size: 35px;
+        line-height: 35px;
+      }
+    }
+  }
+
+  @media (max-width: 570px) {
+    .border-box {
+      top: 70%;
+      h1 {
+        font-size: 18px;
+        line-height: 18px;
+      }
+    }
+  }
+}
+

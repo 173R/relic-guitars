@@ -1,0 +1,148 @@
+.header {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  height: 70px;
+  display: grid;
+  grid-template-areas: "logo mainNav userNav";
+  justify-items: center;
+  align-items: center;
+  box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+
+  .logo {
+    grid-area: logo;
+    transition-duration: 0.3s;
+  }
+
+  .mainNav {
+    grid-area: mainNav;
+    font-size: 20px;
+  }
+
+  .userNav {
+    position: relative;
+    grid-area: userNav;
+    font-size: 18px;
+
+    .icon {
+      display: block;
+      margin: 0 auto;
+      transition-duration: 0.4s;
+    }
+
+    .link{
+      position: relative;
+
+      .notice {
+        display: flex;
+        position: absolute;
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        background-color: orange;
+        top: 0;
+        right: 8px;
+        justify-content: center;
+        align-items: center;
+        span {
+          display: block;
+          color: white;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .burgerMenu {
+    grid-area: burgerMenu;
+    display: none;
+  }
+
+  li{
+    padding: 0 12px;
+    display: inline-block;
+    a {
+      padding: 15px 0;
+      color: black;
+      transition-duration: 0.4s;
+    }
+
+    a:hover {
+      color: orange;
+      .icon {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  @media (max-width: 1400px) {
+
+    height: 60px;
+
+    .logo {
+      transform: scale(0.8);
+      grid-area: logo;
+      transition-duration: 0.3s;
+    }
+
+    .mainNav {
+      grid-area: mainNav;
+      font-size: 14px;
+
+    }
+
+    .userNav {
+      grid-area: userNav;
+      font-size: 12px;
+
+      .icon {
+        height: 20px;
+      }
+    }
+
+    li{
+      padding: 0 8px;
+    }
+  }
+
+
+  @media (max-width: 1024px) {
+    top: 0;
+    position: fixed;
+    z-index: 50;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: "logo userNav burgerMenu";
+    background-color: white;
+
+    .logo{
+      justify-self: start;
+    }
+
+    .mainNav {
+      display: none;
+    }
+
+    .userNav{
+      li{
+        padding: 0 20px;
+      }
+    }
+
+    .burgerMenu {
+      display: inline-block;
+      justify-self: end;
+      padding-right: 30px;
+      transform: scale(1.3);
+    }
+  }
+
+  @media (max-width: 570px) {
+
+    .userNav{
+      display: none;
+    }
+  }
+}
+
+
+
+
