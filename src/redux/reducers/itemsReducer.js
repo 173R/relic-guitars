@@ -3,13 +3,6 @@ const initialState = {
   items: [],
   loading: true,
   category: null,
-  categories: {
-    guitars: "гитары",
-    bass : "бас-гитары",
-    pedals: "эффекты",
-    amps: "усиление",
-    accessories: "аксессуары",
-  },
   filteredItems: [],
   selectedFilters: [],
   sortType: [0],
