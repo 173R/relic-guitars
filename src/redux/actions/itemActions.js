@@ -13,7 +13,7 @@ const itemLoaded = (item) => {
 
 const fetchItem = (id) => (dispatch) => {
   dispatch(itemRequested());
-  fetch(`http://localhost:3000${id}`)
+  fetch(`http://localhost:3001${id}`)
     .then(resolve => resolve.json())
     .then(data => dispatch(itemLoaded(data)));
 }

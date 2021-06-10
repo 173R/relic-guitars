@@ -22,7 +22,7 @@ const setSortType = (sortType) => {
 
 const fetchFilteredItems = (category,selectedFilters,sortType) => (dispatch) => {
 
-  fetch(`http://localhost:3000/${category}?${selectedFilters.join('')}${sortType}`)
+  fetch(`http://localhost:3001/${category}?${selectedFilters.join('')}${sortType}`)
     .then(resolve => resolve.json())
     .then(data => dispatch(filteredItemsLoaded(data)));
 

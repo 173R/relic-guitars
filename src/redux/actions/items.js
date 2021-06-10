@@ -22,7 +22,7 @@ const setCategory = (category) => {
 const fetchItems = (category) => (dispatch) => {
   dispatch(itemsRequested());
 
-  fetch(`http://localhost:3000/${category}`)
+  fetch(`http://localhost:3001/${category}`)
     .then(resolve => resolve.json())
     .then(data => dispatch(itemsLoaded(data)));
 };
