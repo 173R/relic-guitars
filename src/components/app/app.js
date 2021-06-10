@@ -14,7 +14,6 @@ import bass_back from '../../img/background/bass_back.jpg'
 import BlankPage from "../blank-page/blank-page";
 import CartPage from "../pages/cart-page";
 
-
 const App = () => {
 
   return (

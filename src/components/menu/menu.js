@@ -2,6 +2,9 @@ import React from 'react';
 import {Link} from "react-router-dom";
 
 import styles from './menu.module.scss';
+import cart from "../../img/icons/cart.svg";
+import favorites from "../../img/icons/favorites.svg";
+import home from "../../img/icons/home.svg";
 
 const Menu = ({items, active, setActive}) => {
 
@@ -15,6 +18,23 @@ const Menu = ({items, active, setActive}) => {
             </li>
           )}
         </ul>
+          <ul className={styles.icons} >
+            <li >
+              <Link to="/cart/">
+                <img className={styles.icon} src={cart} alt="cart"/>
+              </Link>
+            </li>
+            <li>
+              <Link  to="/favorite/">
+                <img className={styles.icon} src={favorites} alt="favorites"/>
+              </Link>
+            </li>
+            <li>
+              <a>
+                <img className={styles.icon} src={home} alt="home"/>
+              </a>
+            </li>
+          </ul>
       </div>
     </div>
   );

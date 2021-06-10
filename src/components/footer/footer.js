@@ -4,71 +4,69 @@ import instagram from '../../img/icons/instagram.svg';
 import facebook from '../../img/icons/facebook.svg';
 import youtube from '../../img/icons/youtube.svg';
 
-import './footer.scss';
+import styles from './footer.module.scss';
 
 const Footer = () => {
 
   return (
-    <div className='footer'>
-      <div className="footer-major">
-        <div className="footer-major__left">Relic Guitars</div>
-        <div className="footer-major__center">
-          <ul className="links">
-            <li className="links__item">
+    <footer className={styles.footer}>
+      <div className={styles.main}>
+        <span className={styles.logo}>Relic Guitars</span>
+        <div className={styles.midWrapper}>
+          <ul className={styles.links}>
+            <li>
               <a href="/">Доставка</a>
             </li>
-            <li className="links__item">
+            <li>
               <a href="/">Оплата</a>
             </li>
-            <li className="links__item">
+            <li>
               <a href="/">Гарантии</a>
             </li>
-            <li className="links__item">
+            <li>
               <a href="/">Контакты</a>
             </li>
-            <li className="links__item">
+            <li>
               <a href="/">Скидки</a>
             </li>
           </ul>
-          <ul className="contacts">
-            <li className="contacts__item">
-              <p className="title">График работы:</p>
-              <p className="content">12:00-20:00, пн-пт</p>
+          <ul className={styles.contacts}>
+            <li>
+              <p className={styles.title}>График работы:</p>
+              <p className={styles.content}>12:20-20:00, ПН-ПТ</p>
             </li>
-            <li className="contacts__item">
-              <p className="title">Адрес:</p>
-              <p className="content">ул. Светланская 46</p>
+            <li>
+              <p className={styles.title}>Адрес:</p>
+              <p className={styles.content}>УЛ.СВЕТЛАНСКАЯ 46</p>
             </li>
-            <li className="contacts__item">
-              <p className="title">телефон:</p>
-              <p className="content">+7 (880) 555-35-35</p>
-            </li>
-          </ul>
-        </div>
-        <div className="footer-major__right">
-          <ul className="icons">
-            <li className="icons__item">
-              <a href="/">
-                <img src={instagram} alt=""/>
-              </a>
-            </li>
-            <li className="icons__item">
-              <a href="/">
-                <img src={facebook} alt=""/>
-              </a>
-            </li>
-            <li className="icons__item">
-              <a href="/">
-                <img src={youtube} alt=""/>
-              </a>
+            <li>
+              <p className={styles.title}>Телефон:</p>
+              <p className={styles.content}>+7 (880) 555-35-35</p>
             </li>
           </ul>
         </div>
+        <ul className={styles.socials}>
+          <li>
+            <a href="/">
+              <img src={instagram} alt="instagram"/>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img src={facebook} alt="facebook"/>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img src={youtube} alt="youtube"/>
+            </a>
+          </li>
+        </ul>
       </div>
-      <div className="footer-minor">
+      <p className={styles.bottom}>
         © 2021 Relic Guitars
-      </div>
-    </div>
+      </p>
+    </footer>
   );
 }
 

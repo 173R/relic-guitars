@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect,useState} from "react";
 import {shallowEqual, useDispatch, useSelector} from "react-redux";
 
 import {setSelectedFilters} from "../../redux/actions";
@@ -34,9 +34,7 @@ const Filters = () => {
   }, [items]);
 
   useEffect(() => {
-
     setCheckBoxStates({});
-
   }, [category])
 
   const handleSelectFilter= (e) => {
@@ -44,10 +42,9 @@ const Filters = () => {
       newFilter[e.target.name] = e.target.checked;
 
       setCheckBoxStates((state) => {
-
         const newState = {...state, ...newFilter}
-
         const result = [];
+
         for(const [key, value] of Object.entries(newState)) {
           if(value) {
             result.push(key);

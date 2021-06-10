@@ -1,7 +1,7 @@
 import React from 'react';
 import {shallowEqual, useSelector} from "react-redux";
 
-import LoadItem from "../loading-item";
+import LoadItem from "../loading-backs";
 import Item from "../item";
 
 import styles from './compilation.module.scss';

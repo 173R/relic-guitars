@@ -13,4 +13,17 @@ const removeFromCart = (deletedItem) => {
   }
 };
 
-export {addToCart, removeFromCart};
+const quantityInc = (target) => {
+  return {
+    type: 'QUANTITY_INC',
+    payload: target,
+  }
+}
+const quantityDec = (target) => {
+  return {
+    type: 'QUANTITY_DEC',
+    payload: target,
+  }
+}
+
+export {addToCart, removeFromCart, quantityInc, quantityDec};

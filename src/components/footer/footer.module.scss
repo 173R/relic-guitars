@@ -1,0 +1,139 @@
+@import "../../variables";
+
+.footer {
+  @include font('Raleway', 700, 20px);
+  background-color: #1C1C1C;
+  color: #C7C7C7;
+
+  .main {
+    height: 200px;
+    display: grid;
+    grid-template-columns: 3fr 4fr 3fr;
+    padding: 0 50px;
+
+    .logo {
+      align-self: center;
+      text-transform: uppercase;
+      text-shadow:
+              -0 -2px 2px #414141,
+              0 -2px 2px #414141,
+              -0 2px 2px #414141,
+              0 2px 2px #414141,
+              -2px -0 2px #414141,
+              2px -0 2px #414141,
+              -2px 0 2px #414141,
+              2px 0 2px #414141,
+              -1px -2px 2px #414141,
+              1px -2px 2px #414141,
+              -1px 2px 2px #414141,
+              1px 2px 2px #414141,
+              -2px -1px 2px #414141,
+              2px -1px 2px #414141,
+              -2px 1px 2px #414141,
+              2px 1px 2px #414141,
+              -2px -2px 2px #414141,
+              2px -2px 2px #414141,
+              -2px 2px 2px #414141,
+              2px 2px 2px #414141,
+              -2px -2px 2px #414141,
+              2px -2px 2px #414141,
+              -2px 2px 2px #414141,
+              2px 2px 2px #414141;
+    }
+    .midWrapper {
+      align-self: center;
+      .links {
+        display: flex;
+        justify-content: space-between;
+        li {
+          a {
+            color: #C7C7C7;
+          }
+        }
+      }
+      .contacts {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        li {
+          .title {
+            @include font('Raleway', 500, 20px);
+          }
+          .content {
+            @include font('Montserrat', 400, 15px);
+          }
+        }
+      }
+    }
+  }
+  .socials {
+    align-self: center;
+    justify-self: end;
+    li {
+      display: inline-block;
+      margin: 0 2px;
+    }
+  }
+  .bottom {
+    height: 50px;
+    background-color: #121212;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 15px;
+  }
+
+  @media (max-width: 1400px) {
+    @include font('Raleway', 700, 15px);
+
+    .main {
+      .midWrapper{
+        .contacts {
+          li {
+            .title {
+              @include font('Raleway', 500, 15px);
+            }
+            .content {
+              @include font('Montserrat', 400, 12px);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .main {
+      .midWrapper{
+        .links {
+          flex-direction: column;
+          align-items: center;
+          li {
+            margin: 5px 0;
+          }
+        }
+        .contacts {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 570px) {
+    @include font('Raleway', 700, 12px);
+    .main {
+      padding: 0 10px;
+      height: 180px;
+      .logo {
+        text-align: center;
+      }
+      .socials {
+        justify-self: center;
+        li{
+          margin: 10px 0;
+          display: block;
+        }
+      }
+    }
+
+  }
+}

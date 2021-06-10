@@ -577,6 +577,18 @@
         "effect": "Overdrive",
         "decade": "2020"
       }
+    },
+    {
+      "id": 47,
+      "title": "Boss TU-3 Chromatic Tuner",
+      "imgUrl": "https://images.reverb.com/image/upload/s--iknDnaJc--/t_card-square/v1440811836/n4mg2ipkfa4eim4jqqh2.jpg",
+      "price": "5600",
+      "description": {
+        "madeIn": "China",
+        "brand": "Boss",
+        "effect": "Tuner",
+        "decade": "2020"
+      }
     }
   ]
 }

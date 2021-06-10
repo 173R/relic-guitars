@@ -1,67 +1,83 @@
 @import "../../variables";
-
-.grid {
-  @include font('Montserrat', 700, 25px);
-  //min-height: 800px;
-  display: grid;
-  grid-template-columns: minmax(300px,700px) minmax(300px,700px);
-  margin: 60px 0;
-  justify-items: center;
+.itemDescription {
+  height: 90vh;
+  display: flex;
   justify-content: center;
-  align-content: start;
+  align-items: center;
 
-  .leftElement {
-    padding:0 40px;
+  .grid {
+    @include font('Montserrat', 700, 25px);
+    display: grid;
+    grid-template-columns: minmax(300px, 700px) minmax(300px, 700px);
+    justify-items: center;
+    justify-content: center;
+    align-content: start;
 
-  }
-  .rightElement {
-    padding: 0 40px;
-    .title {
-      border-bottom: solid 1px $color_grey;
-      padding-bottom: 12px;
+    .leftElement {
+      padding: 0 20px;
+
     }
-    .description {
-      font-size: 16px;
-      border-bottom: solid 1px $color_grey;
-      padding-bottom: 12px;
-    }
-    .buyButton {
-      position: relative;
-      width: 60%;
-      height: 50px;
-      background-color: $color_orange;
-      font-size: 20px;
-      color: white;
-      border: thick double white;
-      transition-duration: 0.3s;
-      left: 50%;
-      transform: translateX(-50%);
-      &:hover {
-        background-color: $color_dark_orange;
+
+    .rightElement {
+
+      padding: 0 20px;
+
+      .title {
+        border-bottom: solid 1px $color_grey;
+        padding-bottom: 12px;
+      }
+
+      .description {
+        font-size: 16px;
+        border-bottom: solid 1px $color_grey;
+        padding-bottom: 12px;
+      }
+
+      .buyButton {
+        position: relative;
+        width: 250px;
+        height: 50px;
+        background-color: $color_orange;
+        font-size: 20px;
+        color: white;
+        border: thick double white;
+        transition-duration: 0.3s;
+        left: 50%;
+        transform: translateX(-50%);
+
+        &:hover {
+          background-color: $color_dark_orange;
+        }
+      }
+
+      .price {
+        height: 50px;
+        margin-top: 100px;
+        text-align: center;
       }
     }
-    .price {
-      height: 50px;
-      margin-top: 100px;
-      text-align: center;
-    }
-
   }
+  @media (max-width: 1024px) {
 
+    .grid {
+
+      @include font('Montserrat', 700, 20px);
+      .rightElement {
+        .description {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  @media (max-width: 570px) {
+    height: 100%;
+    .grid {
+      margin: 100px 0;
+      row-gap: 40px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+  }
 }
 
-.cover{
-  width: 500px;
-}
-
-
-
-
-
-
-
-.buyButton:hover {
-  background-color: darkorange;
-  cursor: pointer;
-}
 

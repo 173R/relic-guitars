@@ -9,20 +9,22 @@
   z-index: 20;
   transform: translateX(-100%);
   transition-duration: 0.5s;
+  &.active {
+    transform: translateX(0);
+  }
 }
 
-.menu.active {
-  transform: translateX(0);
-}
 
 
 .content {
-  display: grid;
   width: 100%;
   height: 100%;
   background-color: #E8E8E8;
-  justify-items: center;
-
+  .icons {
+    li {
+      display: inline-block;
+    }
+  }
   li {
     display: inline-block;
     width: 100%;
@@ -35,4 +37,5 @@
       color: black;
     }
   }
+
 }

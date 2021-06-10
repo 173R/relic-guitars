@@ -24,19 +24,7 @@
   max-width: 1600px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   padding: 40px 20px;
-  .path {
-    color: $color_grey;
-    @include font('Raleway', 500, 25px);
-    display: inline-block;
-    a {
-      color: $color_grey;
-    }
-    a:hover {
-      color: $color_orange;
-    }
-  }
-  
-
+  user-select: none;
 }

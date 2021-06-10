@@ -16,7 +16,7 @@ const CatalogPage = ({background}) => {
 
   const dispatch = useDispatch();
   const {pathname} = useLocation();
-  const path = pathname.substring(1,pathname.length-1)
+  const path = pathname.substring(1,pathname.length-1);
 
   const {category, selectedFilters,sortType,typesOfSorting } = useSelector(({itemsReducer}) => ({
     category: itemsReducer.category,
@@ -26,7 +26,6 @@ const CatalogPage = ({background}) => {
   }), shallowEqual);
 
   useEffect(() => {
-    const path = pathname.substring(1,pathname.length-1)
     if(category!==path) {
       dispatch(setCategory(path));
     }
@@ -43,10 +42,6 @@ const CatalogPage = ({background}) => {
       <MainBack background = {background}/>
       <CenterBox title={category}/>
       <div className="top-wrapper">
-        <div className='path'>
-          <a href="/">Главная</a>
-          <span>/{dictionary[path]}</span>
-        </div>
         <Sort/>
       </div>
       <div className="middle-wrapper">

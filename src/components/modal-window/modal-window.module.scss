@@ -1,0 +1,41 @@
+.modal {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  opacity: 0;
+  transition-duration: 0.5s;
+
+  &.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .content {
+    border-radius: 20px;
+    background-color: white;
+    transition-duration: 0.5s;
+    transform: scale(0.5);
+    width: 60%;
+    &.active {
+      transform: scale(1);
+    }
+  }
+  @media (max-width: 570px) {
+
+    .content {
+
+      width: 90%;
+      height: 80%;
+    }
+  }
+
+}
+

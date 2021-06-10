@@ -1,5 +1,8 @@
+@import "../../variables";
+
 .item {
 
+  cursor: pointer;
   margin: 0 auto;
   width: 300px;
   height: 460px;
@@ -14,11 +17,9 @@
   }
   
   &__details{
-    position: relative;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    font-size: 15px;
+    @include font('Raleway', 500, 15px);
     line-height: 20px;
+    position: relative;
     text-align: center;
     padding: 10px 20px 0;
     height: 100px;
@@ -31,14 +32,12 @@
       color: orange;
     }
     .item__price {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
+      @include font('Montserrat', 700, 21px);
       position: absolute;
       display: block;
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
-      font-size: 21px;
     }
   }
 }

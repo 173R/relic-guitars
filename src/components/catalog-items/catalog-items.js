@@ -1,17 +1,17 @@
 import React, {useEffect, useState} from "react";
 import {useSelector, shallowEqual} from "react-redux";
 
-import LoadItem from "../loading-item";
+import {LoadItem} from "../loading-backs";
 import Item from "../item";
 
 import styles from './catalog-items.module.scss';
 
+const itemsOnPage = 12;
+
 const CatalogItems = () => {
 
-  const itemsOnPage = 12;
-
-  const myRef = React.useRef(null)
-  const executeScroll = () => myRef.current.scrollIntoView({behavior: 'smooth'})
+  const ref = React.useRef(null)
+  const executeScroll = () => ref.current.scrollIntoView({behavior: 'smooth'})
 
   const [currentPage, setCurrentPage] = useState(0);
 
@@ -48,7 +48,7 @@ const CatalogItems = () => {
   };
 
   return (
-    <div ref={myRef} className={styles.catalog}>
+    <div ref={ref} className={styles.catalog}>
       <ul className={styles.catalogGrid}>
         {catalogRender()}
       </ul>

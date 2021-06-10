@@ -1,0 +1,130 @@
+@import "../../variables";
+
+.grid {
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 100%;
+  @include font('Montserrat', 700, 35px);
+
+  .logForm {
+    height: 100%;
+    padding: 50px;
+    .title {
+      display: block;
+      margin-bottom: 20px;
+    }
+    input {
+      width: 100%;
+      margin-bottom: 40px;
+      font-size: 25px;
+      display: block;
+      border-bottom: solid 2px gainsboro;
+    }
+    .formBottom {
+      display: flex;
+      align-items: center;
+      button {
+        @include font('Montserrat', 500, 20px);
+        border-radius: 10px;
+        padding: 10px 20px;
+        background-color: $color_orange;
+        color: white;
+        transition-duration: 0.3s;
+        &:hover {
+          background-color: $color_dark_orange;
+        }
+      }
+      a{
+        @include font('Montserrat', 400, 20px);
+        display: inline-block;
+        line-height: 20px;
+        color: black;
+        border-bottom: solid 1px black;
+        margin-left: auto;
+      }
+    }
+  }
+  .anotherOption {
+    height: 100%;
+    background-color: gainsboro;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px;
+    .title {
+      display: block;
+      font-size: 30px;
+    }
+    p{
+      @include font('Montserrat', 400, 20px);
+    }
+    button{
+      margin-top: 20px;
+      font-size: 25px;
+      border-radius: 10px;
+      padding: 10px 20px;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+      transition-duration: 0.3s;
+      &:hover {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+      }
+    }
+  }
+  @media (max-width: 1400px) {
+    @include font('Montserrat', 700, 25px);
+    .logForm {
+      .title {
+        font-size: 20px;
+      }
+      input {
+        font-size: 20px;
+      }
+      .formBottom {
+        a{
+          font-size: 15px;
+        }
+      }
+    }
+    .anotherOption {
+      .title {
+        font-size: 20px;
+      }
+      p{
+        font-size: 20px;
+      }
+    }
+  }
+
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    .anotherOption {
+      border-bottom-left-radius: 10px;
+      border-top-right-radius: 0;
+    }
+  }
+  @media (max-width: 570px) {
+    //grid-template-rows: 3fr 2fr;
+    .logForm{
+      padding: 20px;
+      .formBottom{
+        flex-direction: column;
+        a{
+          margin: 20px auto;
+        }
+      }
+    }
+    .anotherOption {
+
+      .title {
+        font-size: 15px;
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}
+

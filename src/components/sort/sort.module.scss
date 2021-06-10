@@ -3,8 +3,6 @@
 .wrapper {
   @include font('Raleway', 500, 20px);
   position: relative;
-  margin-left: auto;
-  padding-left: 20px;
   color: $color_grey;
   margin-right: 40px;
   .label {
@@ -12,6 +10,7 @@
   }
 
   .selected {
+    cursor: pointer;
     margin-left: 10px;
     color: $color_orange;
     transition-duration: 0.3s;
@@ -19,19 +18,22 @@
       text-shadow: red 0 0 1px;
     }
   }
+  @media (max-width: 570px) {
+    @include font('Raleway', 500, 18px);
+  }
 }
 
 .dropdownMenu {
   position: absolute;
-  right: -5px;
+  left: 120px;
   z-index: 1;
   padding: 0 10px;
-  margin-left: auto;
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
   border-radius: 10px;
 
   .dropdownItem {
+    cursor: pointer;
     font-size: 17px;
     transition-duration: 0.3s;
     &:hover {

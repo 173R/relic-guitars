@@ -7,15 +7,15 @@ const Item = ({item}) => {
 
   const history = useHistory();
   return (
-    <div className='item'>
+    <div className='item' onClick={() => history.push(item.id.toString())}>
         <div className='item__cover'>
-          <div onClick={() => history.push(item.id.toString())}>
+          <div>
             <img src={item.imgUrl} alt=""/>
           </div>
         </div>
       <div className='item__details'>
-          <a href = '/' className='item__title'>{item.title}</a>
-          <p className='item__price'>{`${(item.price>9999)?item.price/1000 + ' 000':item.price} руб.`}</p>
+          <p className='item__title'>{item.title}</p>
+          <p className='item__price'>{`${Number(item.price).toLocaleString()} руб.`}</p>
       </div>
     </div>
   )

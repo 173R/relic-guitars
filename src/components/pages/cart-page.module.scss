@@ -1,24 +1,31 @@
 @import "../../variables";
 
+%box-style {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+  border-radius: 10px;
+  padding: 15px;
+}
+
 .emptyCart {
 
   @include font('Montserrat', 700, 25px);
-  min-height: 500px;
-  text-align: center;
+  min-height: 700px;
   margin-top: 100px;
+  text-align: center;
+  img {
+    margin-top: 80px;
+    max-width: 200px;
+  }
 }
 
-
 .grid {
+  @include font('Montserrat', 400, 25px);
   display: grid;
   grid-template-columns: 3fr 1fr;
   min-height: 800px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 30px;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 
   .cart {
 
@@ -28,64 +35,97 @@
     }
 
     .counter {
-      box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
-      padding: 15px;
+      @extend %box-style;
       height: 60px;
       margin: 20px auto;
-      border-radius: 10px;
       width: 98%;
     }
 
     .items {
 
       .item {
-        display: grid;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
-        padding: 15px;
-        border-radius: 10px;
-        margin: 20px auto;
-        grid-template-columns: 1fr 2fr 2fr 1fr;
+        @extend %box-style;
+        display: flex;
         width: 98%;
+        margin: 20px auto;
         img {
           height: 200px;
         }
-
         .title {
-          display: block;
+          margin: 0 20px;
         }
         .price {
-          display: block;
+          margin: 0 20px;
         }
+        .wrapper {
+          margin: 0 20px;
+          align-self: center;
+
+          .quantity {
+            @extend %box-style;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+
+            .count {
+              margin: 0 5px;
+              display: inline-block;
+              width: 30px;
+              text-align: center;
+            }
+            .changeQuantity {
+
+              margin: 0 5px;
+              font-size: 25px;
+              line-height: 25px;
+              color: $color_grey;
+              background-color: transparent;
+              display: inline-block;
+            }
+          }
+
+          .delete {
+            display: block;
+            margin: 20px auto;
+            padding: 0;
+            background-color: transparent;
+            transition-duration: 0.3s;
+            font-size: 15px;
+            &:hover {
+              color: $color_dark_orange;
+            }
+          }
+        }
+
       }
     }
   }
 
   .result {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
-    padding: 15px;
+    position: relative;
+    @extend %box-style;
     height: 310px;
     width: 90%;
-    margin: 20px auto;
-    border-radius: 10px;
-    position: relative;
+    margin: 20px 0 0 10px;
     font-size: 23px;
-    a {
+
+    .orangeBtn {
+      @extend %box-style;
       position: absolute;
-      display: block;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
-      border-radius: 10px;
-      background-color: orange;
-      width: 200px;
-      height: 30px;
-      left: 50%;
-      bottom: 20px;
-      transform: translateX(-50%);
-      color: black;
       text-align: center;
-      font-size: 15px;
-    }
-    a:hover {
-      background-color: darkorange;
+      width: 90%;
+      border: solid 2px $color_orange;
+      color: black;
+      white-space: nowrap;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 5px;
+      bottom: 20px;
+      transition-duration: 0.3s;
+      &:hover {
+        background-color: $color_orange;
+        color: white;
+      }
     }
   }
 
@@ -95,11 +135,68 @@
 
 
   @media (max-width: 1024px) {
-    margin-top: 80px;
 
+    @include font('Montserrat', 400, 20px);
+    margin-top: 80px;
+    display: block;
+
+    .result {
+      height: auto;
+      margin: auto 0;
+      width: 98%;
+      .orangeBtn {
+        width: auto;
+        left: auto;
+        right: 10px;
+        transform: translateX(0);
+        bottom:10px;
+      }
+    }
+
+    .cart {
+      .counter {
+        font-size: 25px;
+      }
+      .items {
+        .item {
+          img {
+            height: 100px;
+          }
+
+        }
+      }
+    }
   }
 
   @media (max-width: 570px) {
+
+    .result {
+      margin-bottom: 20px;
+      font-size: 12px;
+      .orangeBtn {
+
+      }
+    }
+    .cart {
+      .counter {
+        font-size: 20px;
+      }
+      .items {
+        .item {
+          flex-direction: column;
+          img {
+            height: 100%;
+          }
+          .title {
+            margin: 10px 0;
+            text-align: center;
+          }
+          .price {
+            text-align: center;
+          }
+        }
+      }
+    }
   }
 }
 

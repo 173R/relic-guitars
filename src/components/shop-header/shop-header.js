@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 import {useSelector} from "react-redux";
 
 import Menu from "../menu";
+import ModalWindow from "../modal-window";
 
 import logo from '../../img/logo/main-icon.png'
 import favorites from '../../img/icons/favorites.svg';
@@ -11,6 +12,7 @@ import cart from '../../img/icons/cart.svg';
 import burger from '../../img/icons/burger.svg';
 
 import styles from './shop-header.module.scss';
+import RegLogForm from "../reg-log-form";
 
 const ShopHeader = () => {
 
@@ -24,8 +26,13 @@ const ShopHeader = () => {
     {value:'Ремонт', link: "/repair/"},
   ];
 
-  const countItemsInCart = useSelector(({cartReducer}) => cartReducer.cart.length);
   const [menuActive, setMenuActive] = useState(false);
+  const [modalActive, setModalActive] = useState(false);
+  const countItemsInCart = useSelector(({cartReducer}) => {
+    return Object.keys(cartReducer.cart).reduce((acc,cur) => {
+      return acc + cartReducer.cart[cur][1];
+    }, 0)
+  });
 
   const renderMainNav = () => {
     return Array(links.length).fill(0).map((_,index) => {
@@ -54,7 +61,7 @@ const ShopHeader = () => {
           <ul >
             <li>
               <Link className={styles.link}  to="/cart/">
-                <img className={styles.icon} src={cart} alt=""/>
+                <img className={styles.icon} src={cart} alt="cart"/>
                 <span>Корзина</span>
                   {
                     countItemsInCart?(
@@ -66,15 +73,15 @@ const ShopHeader = () => {
             </li>
             <li>
               <Link to="/favorite/">
-                <img className={styles.icon} src={favorites} alt=""/>
+                <img className={styles.icon} src={favorites} alt="favorites"/>
                 <span>Избранное</span>
               </Link>
             </li>
             <li>
-              <Link to="/home/">
-                <img className={styles.icon} src={home} alt=""/>
+              <a onClick={() => setModalActive(true)}>
+                <img className={styles.icon} src={home} alt="home"/>
                 <span>Вход</span>
-              </Link>
+              </a>
             </li>
           </ul>
         </nav>
@@ -83,6 +90,9 @@ const ShopHeader = () => {
         </div>
       </div>
     <Menu active = {menuActive} setActive={setMenuActive} items = {links}/>
+      <ModalWindow active = {modalActive} setActive = {setModalActive}>
+        <RegLogForm/>
+      </ModalWindow>
   </>
   )
 };

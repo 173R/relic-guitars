@@ -1,3 +1,5 @@
+@import "../../variables";
+
 .footer {
   color: #C7C7C7;
   &-major {
@@ -42,10 +44,7 @@
               2px 2px 2px #414141;
     }
     &__center {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: bold;
-      font-size: 15px;
-      line-height: 20px;
+      @include font('Montserrat', 700, 15px);
       text-transform: uppercase;
       margin: 0 auto;
 
@@ -68,7 +67,6 @@
             font-family: 'Raleway', sans-serif;
             font-weight: 400;
           }
-
           .content {
             font-weight: 700;
           }
@@ -100,4 +98,13 @@
     align-items: center;
     text-transform: capitalize;
   }
+
+  @media (max-width: 1024px) {
+
+  }
+
+  @media (max-width: 570px) {
+
+  }
+
 }
