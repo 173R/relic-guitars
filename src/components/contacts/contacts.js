@@ -6,7 +6,7 @@ const Contacts = () => {
 
   return (
     <div className={styles.contacts}>
-      <img className={styles.background} src='https://loud-lemon.com/catalog/view/theme/default/images/homepage/store_photo.jpg' alt="Контакты"/>
+     {/* <img className={styles.background} src='https://loud-lemon.com/catalog/view/theme/default/images/homepage/store_photo.jpg' alt="Контакты"/>*/}
       <ul className={styles.info}>
         <li className={styles.element}>
           <p className={styles.title}>График работы:</p>

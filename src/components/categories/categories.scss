@@ -1,6 +1,6 @@
 
 .categories-grid{
-
+  //height: 580px;
   margin:5px 0;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -20,7 +20,7 @@
 .grid-item {
   position: relative;
   overflow: hidden;
-
+  height: 100%;
   .description {
     position: absolute;
     font-family: 'Raleway', sans-serif;
@@ -69,7 +69,7 @@
     opacity: 1;
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    //object-fit: cover;
     transition: opacity 1.2s, transform 1.2s;
   }
 

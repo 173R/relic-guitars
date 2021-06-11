@@ -2,22 +2,47 @@
 
 .contacts {
   position: relative;
-
+  height: 400px;
+  margin-bottom: 5px;
+  background: url('../../img/background/contacts_2.jpg') 0 0/100% auto no-repeat;
   .background {
     width: 100%;
   }
 
   .info {
     position: absolute;
-    background-color: white;
     top: 50%;
     transform: translateY(-50%);
     left: 10%;
-    border: solid 4px black;
     padding: 15px;
-
+    color: white;
+    text-shadow:
+            -0 -2px 2px #414141,
+            0 -2px 2px #414141,
+            -0 2px 2px #414141,
+            0 2px 2px #414141,
+            -2px -0 2px #414141,
+            2px -0 2px #414141,
+            -2px 0 2px #414141,
+            2px 0 2px #414141,
+            -1px -2px 2px #414141,
+            1px -2px 2px #414141,
+            -1px 2px 2px #414141,
+            1px 2px 2px #414141,
+            -2px -1px 2px #414141,
+            2px -1px 2px #414141,
+            -2px 1px 2px #414141,
+            2px 1px 2px #414141,
+            -2px -2px 2px #414141,
+            2px -2px 2px #414141,
+            -2px 2px 2px #414141,
+            2px 2px 2px #414141,
+            -2px -2px 2px #414141,
+            2px -2px 2px #414141,
+            -2px 2px 2px #414141,
+            2px 2px 2px #414141;
     .element {
-      @include font('Montserrat', 500, 20px)
+      @include font('Montserrat', 700, 30px)
     }
 
     .content {
@@ -29,11 +54,8 @@
 
 
   @media (max-width: 1024px) {
-
+    height: 300px;
     .info {
-      position: static;
-      transform: translateY(0);
-      border: none;
       padding: 10px;
 
       .title {
@@ -49,6 +71,7 @@
   }
 
   @media (max-width: 570px) {
+    height: 200px;
     .info {
       padding: 15px 10px;
       .title {
