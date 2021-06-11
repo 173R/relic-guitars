@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  margin: 50px 0;
   .grid {
     @include font('Montserrat', 700, 25px);
     display: grid;
@@ -15,7 +15,6 @@
 
     .leftElement {
       padding: 0 20px;
-
     }
 
     .rightElement {
@@ -70,6 +69,7 @@
     }
   }
   @media (max-width: 570px) {
+    margin: 0 0;
     height: 100%;
     .grid {
       margin: 100px 0;

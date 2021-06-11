@@ -7,12 +7,11 @@ import CenterBox from "../center-box";
 import Filters from "../filters";
 import MainBack from "../main-back";
 import Sort from "../sort";
-import {dictionary} from "../../dictionary/dictionary";
 import {fetchItems, setCategory, fetchFilteredItems} from "../../redux/actions";
 
 import './catalog-page.scss';
 
-const CatalogPage = ({background}) => {
+const CatalogPage = () => {
 
   const dispatch = useDispatch();
   const {pathname} = useLocation();
@@ -34,18 +33,17 @@ const CatalogPage = ({background}) => {
 
   useEffect(() => {
       dispatch(fetchFilteredItems(path,selectedFilters,typesOfSorting[sortType]))
-
   }, [selectedFilters, sortType]);
 
   return (
     <>
-      <MainBack background = {background}/>
-      <CenterBox title={category}/>
+      <MainBack/>
+      <CenterBox  title={category}/>
       <div className="top-wrapper">
         <Sort/>
       </div>
       <div className="middle-wrapper">
-        <Filters/>
+        <Filters />
         <CatalogItems />
       </div>
     </>

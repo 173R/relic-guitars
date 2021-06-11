@@ -3,6 +3,7 @@
 .contacts {
   position: relative;
   height: 400px;
+  margin-top: 2px;
   margin-bottom: 5px;
   background: url('../../img/background/contacts_2.jpg') 0 0/100% auto no-repeat;
   .background {
@@ -16,35 +17,9 @@
     left: 10%;
     padding: 15px;
     color: white;
-    text-shadow:
-            -0 -2px 2px #414141,
-            0 -2px 2px #414141,
-            -0 2px 2px #414141,
-            0 2px 2px #414141,
-            -2px -0 2px #414141,
-            2px -0 2px #414141,
-            -2px 0 2px #414141,
-            2px 0 2px #414141,
-            -1px -2px 2px #414141,
-            1px -2px 2px #414141,
-            -1px 2px 2px #414141,
-            1px 2px 2px #414141,
-            -2px -1px 2px #414141,
-            2px -1px 2px #414141,
-            -2px 1px 2px #414141,
-            2px 1px 2px #414141,
-            -2px -2px 2px #414141,
-            2px -2px 2px #414141,
-            -2px 2px 2px #414141,
-            2px 2px 2px #414141,
-            -2px -2px 2px #414141,
-            2px -2px 2px #414141,
-            -2px 2px 2px #414141,
-            2px 2px 2px #414141;
     .element {
       @include font('Montserrat', 700, 30px)
     }
-
     .content {
       margin-bottom: 5px;
       font-size: 24px;

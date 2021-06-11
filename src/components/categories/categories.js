@@ -3,9 +3,9 @@ import {Link} from "react-router-dom";
 
 import guitarsImg from '../../img/categories/guitars.jpg'
 import ampsImg from '../../img/categories/amps.jpg'
-import agingImg from '../../img/categories/aging.jpg'
-import repairImg from '../../img/categories/repair.jpg'
 import pedalsImg from '../../img/categories/pedals.jpg'
+import accessories from  '../../img/categories/accessories.jpg'
+import bass from '../../img/categories/bass.jpg'
 
 import './categories.scss';
 
@@ -25,12 +25,12 @@ const Categories = () => {
         </div>
         <div className='categories-grid__right'>
           <div className='grid-item'>
-            <a href="/">
-              <span className="description">Ремонт</span>
+            <Link to='/bass/'>
+              <span className="description">Бас-гитары</span>
               <div className='shadow'>
-                <img src={repairImg} alt="repairImg"/>
+                <img src={bass} alt="bass"/>
               </div>
-            </a>
+            </Link>
           </div>
           <div className='grid-item'>
             <Link to="/amps/">
@@ -41,12 +41,12 @@ const Categories = () => {
             </Link>
           </div>
           <div className='grid-item'>
-            <a href="/">
-              <span className="description">Custom Shop</span>
+            <Link to="/accessories/">
+              <span className="description">Аксессуары</span>
               <div className='shadow'>
-                <img src={agingImg} alt="agingImg"/>
+                <img src={accessories} alt="agingImg"/>
               </div>
-            </a>
+            </Link>
           </div>
           <div className='grid-item'>
             <Link to="/pedals/">

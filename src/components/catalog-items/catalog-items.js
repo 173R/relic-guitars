@@ -10,11 +10,8 @@ const itemsOnPage = 12;
 
 const CatalogItems = () => {
 
-  const ref = React.useRef(null)
-  const executeScroll = () => ref.current.scrollIntoView({behavior: 'smooth'})
-
+  const ref = React.useRef(null);
   const [currentPage, setCurrentPage] = useState(0);
-
   const {items, loading} = useSelector(({itemsReducer}) => (
     {
       items : itemsReducer.filteredItems,
@@ -25,6 +22,8 @@ const CatalogItems = () => {
   useEffect(() => {
     setCurrentPage(0)
   }, [items]);
+
+  const executeScroll = () => ref.current.scrollIntoView({behavior: 'smooth'})
 
   const catalogRender = () => {
 

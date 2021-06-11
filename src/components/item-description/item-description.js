@@ -1,20 +1,20 @@
-import React, {useEffect, useRef} from "react";
+import React, {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {useLocation} from "react-router-dom";
 
 import {fetchItem, addToCart} from "../../redux/actions";
+import {LoadingWindow} from "../loading-backs";
 import {dictionary} from "../../dictionary/dictionary";
-
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination,Navigation } from 'swiper/core';
 
-import styles from './item-description.module.scss';
 import './swiper-styles.scss';
 import "swiper/swiper.min.css";
 import "swiper/components/pagination/pagination.min.css"
 import "swiper/components/navigation/navigation.min.css"
-import {LoadingWindow} from "../loading-backs";
+
+import styles from './item-description.module.scss';
 
 SwiperCore.use([Pagination,Navigation]);
 
@@ -29,7 +29,6 @@ const ItemDescription = () => {
       dispatch(fetchItem(pathname))
       window.scrollTo(0, 0);
   }, [dispatch, pathname])
-
 
   return (
     <div className={styles.itemDescription}>

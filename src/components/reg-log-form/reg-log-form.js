@@ -7,7 +7,6 @@ const RegLogForm = () => {
 
   const [isLogged, setIsLogged] = useState(true);
 
-  console.log(isLogged);
   return (
     isLogged ? <LogForm setActive={setIsLogged} /> : <RegForm setActive={setIsLogged}/>
   );

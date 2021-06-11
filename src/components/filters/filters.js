@@ -1,4 +1,4 @@
-import React, {useEffect,useState} from "react";
+import React, {useEffect, useState} from "react";
 import {shallowEqual, useDispatch, useSelector} from "react-redux";
 
 import {setSelectedFilters} from "../../redux/actions";
@@ -9,15 +9,13 @@ import './filters.scss';
 const Filters = () => {
 
   const dispatch = useDispatch();
-
   const {items, category} = useSelector(({itemsReducer}) => ({
     items: itemsReducer.items,
     category: itemsReducer.category,
   }), shallowEqual);
 
   const [itemsDescription, setItemsDescription] = useState({});
-  const [checkBoxStates, setCheckBoxStates] = useState({})
-
+  const [checkBoxStates, setCheckBoxStates] = useState({});
 
   useEffect(()=>{
     const temp_filters = {};
@@ -78,7 +76,7 @@ const Filters = () => {
     return elements;
   }
   return (
-    <div className='filters'>
+    <div className='filters' >
       {filtersRender()}
     </div>
   );

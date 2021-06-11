@@ -12,4 +12,5 @@ export const dictionary = {
   watt: "Ватты",
   speaker: "Размер динамика",
   effect: "Тип эффекта",
+  type: "Тип"
 }

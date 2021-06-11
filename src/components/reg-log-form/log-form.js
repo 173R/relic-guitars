@@ -7,9 +7,9 @@ const LogForm = ({setActive}) => {
       <form className={styles.logForm}>
         <span className={styles.title}>Вход</span>
         <input placeholder="Ваш логин или почта" type="text"/>
-        <input placeholder="Пароль" type="text"/>
+        <input placeholder="Пароль" type="password"/>
         <div className={styles.formBottom}>
-          <button>Войти</button>
+          <button type="submit">Войти</button>
           <a href="/">Забыли пароль?</a>
         </div>
       </form>

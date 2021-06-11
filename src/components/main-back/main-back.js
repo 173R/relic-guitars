@@ -2,10 +2,9 @@ import React from "react";
 
 import './main-back.scss';
 
-const MainBack = ({background}) => {
+const MainBack = () => {
   return (
     <div className='main-screen'>
-      {/*<img src={background} alt="background"/>*/}
       <div className='border-box' >
         <h1>Relic Guitars</h1>
       </div>

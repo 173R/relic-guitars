@@ -96,6 +96,9 @@
     }
   }
 
+  .inputError {
+    @include font('Montserrat', 500, 10px);
+  }
 
   @media (max-width: 1024px) {
     grid-template-columns: 1fr;
@@ -127,4 +130,6 @@
     }
   }
 }
+
+
 

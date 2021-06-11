@@ -590,5 +590,61 @@
         "decade": "2020"
       }
     }
+  ],
+  "accessories": [
+    {
+      "id": 48,
+      "title": "Ernie Ball 2221 Regular Slinky Electric Guitar Strings, .010 - .046",
+      "imgUrl": "https://images.reverb.com/image/upload/s--1RThzd3s--/a_exif,c_thumb,f_auto,fl_progressive,g_south,h_296,q_auto:eco,w_296/v1510353390/a13d0fcc0tka6ofujngh.png",
+      "price": "376",
+      "description": {
+        "type": "Струны"
+      }
+    },
+    {
+      "id": 49,
+      "title": "Ernie Ball 2223 Super Slinky Electric Guitar Strings, .009 - .042",
+      "imgUrl": "https://images.reverb.com/image/upload/s--e3o5yIP6--/a_exif,c_thumb,f_auto,fl_progressive,g_south,h_296,q_auto:eco,w_296/v1470692962/sbbcpobuuv6lznuxld9f.jpg",
+      "price": "380",
+      "description": {
+        "type": "Струны"
+      }
+    },
+    {
+      "id": 50,
+      "title": "Ernie Ball 2220 Power Slinky Electric Guitar Strings, .011 - .048",
+      "imgUrl": "https://images.reverb.com/image/upload/s--6n5X09Zl--/a_exif,c_thumb,f_auto,fl_progressive,g_south,h_296,q_auto:eco,w_296/v1510353285/jwbr9eker2wqxgqtvnkg.png",
+      "price": "860",
+      "description": {
+        "type": "Струны"
+      }
+    },
+    {
+      "id": 51,
+      "title": "Dunlop JH Jimi Hendrix Strap",
+      "imgUrl": "https://images.reverb.com/image/upload/s--Y_5YHjGr--/a_exif,c_thumb,f_auto,fl_progressive,g_south,h_296,q_auto:eco,w_296/v1491226399/itvdgoqylpu6vwujcrgk.jpg",
+      "price": "940",
+      "description": {
+        "type": "Ремни"
+      }
+    },
+    {
+      "id": 51,
+      "title": "Dunlop D67 Jacquard Strap",
+      "imgUrl": "https://images.reverb.com/image/upload/s--NVLNPTgA--/t_card-square/v1612457179/gdhc5ygreduwxnfhjtnp.png",
+      "price": "965",
+      "description": {
+        "type": "Ремни"
+      }
+    },
+    {
+      "id": 52,
+      "title": "Fender F Logo Infinity Strap Locks",
+      "imgUrl": "https://images.reverb.com/image/upload/s--dXzgYFWt--/t_card-square/v1600290951/j2nbls8nqeeo2kzpjvjs.png",
+      "price": "765",
+      "description": {
+        "type": "Стреплоки"
+      }
+    }
   ]
 }
